@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Кольцов](https://up.htmlacademy.ru/adaptive/20/user/1115691).
-* Наставник: `Неизвестно`.
+* Наставник: `Ирина Фролова`(https://htmlacademy.ru/profile/id1043867)
 
 ---
 
