@@ -18,22 +18,22 @@
       </button>
       <ul class="main-navigation__list">
         <li class="main-navigation__item main-navigation__item--active">
-          <a>
+          <a href="index.html" class="main-navigation__link">
             Главная
           </a>
         </li>
         <li class="main-navigation__item">
-          <a href="photo.html">
+          <a href="photo.html" class="main-navigation__link">
             Фото и видео
           </a>
         </li>
         <li class="main-navigation__item">
-          <a href="form.html">
+          <a class="main-navigation__link main-navigation__link--active">
             Форма отзыва
           </a>
         </li>
         <li class="main-navigation__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="main-navigation__link">
             htmlacademy
           </a>
         </li>
@@ -44,11 +44,12 @@
   <main class="page-main">
 
     <section class="inner-page-intro">
-      <h1>
-
+      <h1 class="inner-page-intro__title">
+        Оставьте свой отзыв
       </h1>
-      <p>
-
+      <p class="inner-page-intro__description">
+        Помогите нашим отелям стать лучше!
+        Оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
     </section>
     <section class="form">
@@ -134,7 +135,7 @@
           <ul class="form__input checkbox-list">
             <li class="checkbox-list__item">
               <label class="checkbox-list__label" for="Devils-Bridge">
-                <input class="checkbox-list__checkbox" type="checkbox" name="Devils-Bridge" id="" checked>
+                <input class="checkbox-list__checkbox" type="checkbox" name="Devils-Bridge" id="Devils-Bridge" checked>
                 Мост Дьявола
               </label>
             </li>
@@ -162,7 +163,8 @@
           <legend class="form__title">
             Опишите свои эмоции:
           </legend>
-          <textarea class="form__comment" name="comment" rows="20" cols="100" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__comment" name="comment" rows="20" cols="100"
+            placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="form__button" type="submit">
           Отправить отзыв
