@@ -33,3 +33,16 @@
   font-weight: 700;
   line-height: 26px;
 }
+
+@mixin list-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin background-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+}

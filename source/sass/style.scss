@@ -20,4 +20,9 @@
   font-style: normal;
 }
 
+// repeat block
 @import 'blocks/page-header.scss';
+@import 'blocks/page-footer.scss';
+
+// content index
+@import 'blocks/page-intro.scss';

@@ -1,7 +1,50 @@
 .page-header {
   @include menu-font;
+  display: flex;
+  // width: 100%;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  align-self: center;
 }
 
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-navigation__list {
+  @include list-style;
   background-color: $accent-background;
+}
+
+.main-navigation__item {
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.main-navigation__item:not(.main-navigation__item--active) {
+  &:hover {
+    background-color: $hover-background;
+  }
+  &:active {
+    background-color: $active-background;
+  }
+}
+
+.main-navigation__item--active {
+  background-color: $active-background;
+  cursor: default;
+}
+
+.main-navigation__link {
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  text-align: center;
+  color: $menu-font-color;
+  &:active {
+    opacity: $font-active-opacity;
+  }
 }
