@@ -1,0 +1,35 @@
+@mixin menu-font {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+@mixin title-font {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+@mixin advantages-content-font {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+@mixin main-intro-font {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+@mixin inner-intro-font {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@mixin link-font {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}

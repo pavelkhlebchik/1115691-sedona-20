@@ -1,11 +1,25 @@
-//font-styleguide
+//font styleguide
+//color
 $menu-font-color: #FFFFFF;
 $content-font-color: #000000;
-$font-hover: #81B3D2;
+$font-menu-hover: #81B3D2;
 $font-active-opacity: 0.3;
+$active-link: #766357;
+$active-link-hover: #604E43;
+
+//family
+$basic-font: 'PT-sans', 'Arial', 'sans-serif';
 
 //background
 $basic-background: #FFFFFF;
 $accent-background: #81B3D2;
 $hidden-advantage-background: #EEEEEE;
+$hover-background: #669EC0;
+$active-background: #5496BD;
+$disabled-background: #E5E5E5;
 
+//form color
+$basic-form: F2F2F2;
+$hover-form: E5E5E5;
+$active-input: 4px solid #E5E5E5;
+$active-item-opacity: 0.3;
