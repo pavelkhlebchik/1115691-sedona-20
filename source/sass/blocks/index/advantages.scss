@@ -1,0 +1,30 @@
+.advantages__list {
+  @include list-style;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  &--hidden-advantage {
+    background-color: $hidden-advantage-background;
+  }
+}
+
+
+.advantages__description-wrapper {
+  text-align: center;
+  &--accent {
+    color: $menu-font-color;
+    background-color: $accent-background;
+  }
+}
+
+
+.advantages__title {
+  @include title-font;
+}
+
+.advantages__number,
+.advantages__description {
+  @include advantages-content-font;
+}
