@@ -50,3 +50,8 @@
   mask-repeat: no-repeat;
   mask-position: center;
 }
+
+@mixin none-margin-padding {
+  margin: 0;
+  padding: 0;
+}

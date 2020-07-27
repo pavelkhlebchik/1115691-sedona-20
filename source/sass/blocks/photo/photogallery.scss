@@ -1,0 +1,37 @@
+.photogallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.photogallery__list {
+  @include list-style;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photogallery__image-title,
+.photogallery__likes {
+  @include inner-intro-font;
+  @include none-margin-padding;
+  font-weight: 700;
+}
+
+.photogallery__image-author {
+  @include inner-intro-font;
+  @include none-margin-padding;
+  text-transform: none;
+}
+
+.photogallery__likes {
+  &::before {
+    content: ' ';
+    mask-image: url('../img/icon-like.svg');
+    @include mask-icon;
+    width: 23px;
+    height: 21px;
+    display: inline-block;
+    background-color: $basic-black;
+    opacity: $active-item-opacity;
+  }
+}

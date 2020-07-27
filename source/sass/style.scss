@@ -24,11 +24,12 @@
 @import 'blocks/page-header.scss';
 @import 'blocks/page-footer.scss';
 
-// content index
+// content index.html
 @import 'blocks/page-intro.scss';
 @import 'blocks/index/advantages.scss';
 @import 'blocks/index/search-hotels.scss';
 @import 'blocks/index/location.scss';
 
-// content photo
-@import 'blocks/inner-page-intro.scss'
+// content photo.html
+@import 'blocks/inner-page-intro.scss';
+@import 'blocks/photo/photogallery.scss';
