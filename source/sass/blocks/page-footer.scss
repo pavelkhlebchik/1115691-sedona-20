@@ -32,33 +32,21 @@
 }
 
 .twitter-icon {
-  // width: 30px;
-  // height: 30px;
   mask-image: url('../img/icon-twitter.svg');
-  mask-position: 50% 50%;
-  mask-repeat: no-repeat;
+  @include mask-icon;
   background-color: white;
-  // @include background-icon;
 }
 
 .facebook-icon {
-  // width: 9px;
-  // height: 19px;
   mask-image: url('../img/icon-facebook.svg');
-  mask-position: 50% 50%;
-  mask-repeat: no-repeat;
+  @include mask-icon;
   background-color: white;
-  // @include background-icon;
 }
 
 .youtube-icon {
-  // width: 30px;
-  // height: 30px;
   mask-image: url('../img/icon-youtube.svg');
-  mask-position: 50% 50%;
-  mask-repeat: no-repeat;
+  @include mask-icon;
   background-color: white;
-  // @include background-icon;
 }
 
 .socials__link-dev {
@@ -70,10 +58,8 @@
   width: 44px;
   height: 44px;
   mask-image: url('../img/htmlacademy.svg');
-  mask-position: 50% 50%;
-  mask-repeat: no-repeat;
+  @include mask-icon;
   background-color: $basic-black;
-  // @include background-icon;
   &:hover {
     background-color: $accent-background;
   }

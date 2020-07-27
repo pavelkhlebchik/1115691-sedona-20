@@ -40,9 +40,13 @@
   padding: 0;
 }
 
-@mixin background-icon {
+@mixin background-img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  display: block;
+}
+
+@mixin mask-icon {
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
