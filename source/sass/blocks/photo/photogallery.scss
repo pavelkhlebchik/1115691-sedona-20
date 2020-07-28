@@ -4,29 +4,34 @@
 }
 
 .photogallery__list {
-  @include list-style;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include list-style;
 }
 
 .photogallery__image-title,
 .photogallery__likes {
   @include inner-intro-font;
   @include none-margin-padding;
+
   font-weight: 700;
 }
 
 .photogallery__image-author {
   @include inner-intro-font;
   @include none-margin-padding;
+
   text-transform: none;
 }
 
 .photogallery__likes {
+
   &::before {
-    content: ' ';
-    mask-image: url('../img/icon-like.svg');
+    content: " ";
+    mask-image: url("../img/icon-like.svg");
+
     @include mask-icon;
     width: 23px;
     height: 21px;

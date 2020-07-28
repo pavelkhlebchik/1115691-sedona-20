@@ -3,16 +3,17 @@
 }
 
 .inner-page-intro__bg {
-  background-image: url('../img/bg-back-mobile@1x.jpg');
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 100%;
   background-size: 241% 244%;
   height: 158px;
   position: relative;
+
   &::after {
     content: "";
     width: 320px;
     height: 27px;
-    background-image: url('../img/bg-intro-triangle-mobile.svg');
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -21,7 +22,7 @@
 }
 
 .inner-page-intro__bg-text {
-  background-image: url('../img/text-sedona.svg');
+  background-image: url("../img/text-sedona.svg");
   background-position: 50% 44%;
   background-size: 230px;
   background-repeat: no-repeat;

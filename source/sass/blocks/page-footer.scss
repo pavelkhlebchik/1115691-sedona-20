@@ -1,5 +1,5 @@
 .page-footer {
-  outline:  blue 1px solid;
+  outline: blue 1px solid;
 }
 
 .socials__hashtag {
@@ -17,9 +17,11 @@
   align-items: center;
   justify-content: center;
   background-color: $accent-background;
+
   &:hover {
     background-color: $hover-background;
   }
+
   &:active {
     background-color: $active-background;
   }
@@ -30,27 +32,31 @@
   padding-bottom: 23px;
   padding-right: 24px;
   padding-left: 24px;
+
   &:active {
     opacity: $font-active-opacity;
   }
 }
 
 .twitter-icon {
-  mask-image: url('../img/icon-twitter.svg');
-  @include mask-icon;
+  mask-image: url("../img/icon-twitter.svg");
   background-color: white;
+
+  @include mask-icon;
 }
 
 .facebook-icon {
-  mask-image: url('../img/icon-facebook.svg');
-  @include mask-icon;
+  mask-image: url("../img/icon-facebook.svg");
   background-color: white;
+
+  @include mask-icon;
 }
 
 .youtube-icon {
-  mask-image: url('../img/icon-youtube.svg');
-  @include mask-icon;
+  mask-image: url("../img/icon-youtube.svg");
   background-color: white;
+
+  @include mask-icon;
 }
 
 .socials__link-dev {
@@ -61,12 +67,15 @@
   display: block;
   width: 44px;
   height: 44px;
-  mask-image: url('../img/htmlacademy.svg');
-  @include mask-icon;
+  mask-image: url("../img/htmlacademy.svg");
   background-color: $basic-black;
+
+  @include mask-icon;
+
   &:hover {
     background-color: $accent-background;
   }
+
   &:active {
     background-color: $basic-black;
     opacity: $active-item-opacity;
