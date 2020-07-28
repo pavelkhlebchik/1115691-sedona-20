@@ -1,8 +1,9 @@
 @charset 'utf-8';
-@import 'normalize.scss';
-@import 'variables.scss';
-@import 'mixin.scss';
-@import 'blocks/page-body.scss';
+@import
+  'normalize.scss',
+  'variables.scss',
+  'mixin.scss',
+  'blocks/page-body.scss';
 
 @font-face {
   font-family: 'PT-sans';
