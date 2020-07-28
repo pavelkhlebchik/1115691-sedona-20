@@ -1,34 +1,33 @@
-@charset 'utf-8';
-@import
-  'normalize.scss',
-  'variables.scss',
-  'mixin.scss',
-  'blocks/page-body.scss';
+@charset "utf-8";
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixin.scss";
+@import "blocks/page-body.scss";
 
 @font-face {
-  font-family: 'PT-sans';
-  src: url('../fonts/ptsans.woff2') format('woff2'), url('../fonts/ptsans.woff') format('woff');
+  font-family: "PT-sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'PT-sans';
-  src: url('../fonts/ptsansbold.woff2') format('woff2'), url('../fonts/ptsansbold.woff') format('woff');
+  font-family: "PT-sans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 // repeat block
-@import 'blocks/page-header.scss';
-@import 'blocks/page-footer.scss';
+@import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
 
 // content index.html
-@import 'blocks/page-intro.scss';
-@import 'blocks/index/advantages.scss';
-@import 'blocks/index/search-hotels.scss';
-@import 'blocks/index/location.scss';
+@import "blocks/page-intro.scss";
+@import "blocks/index/advantages.scss";
+@import "blocks/index/search-hotels.scss";
+@import "blocks/index/location.scss";
 
 // content photo.html
-@import 'blocks/inner-page-intro.scss';
-@import 'blocks/photo/photogallery.scss';
+@import "blocks/inner-page-intro.scss";
+@import "blocks/photo/photogallery.scss";
