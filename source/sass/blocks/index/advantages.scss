@@ -23,9 +23,10 @@
   justify-content: space-between;
 }
 
-.home-icon{
-  content: ' ';
-  mask-image: url('../img/icon-house.svg');
+.home-icon {
+  content: " ";
+  mask-image: url("../img/icon-house.svg");
+
   @include mask-icon;
   background-color: $accent-background;
   mask-size: contain;
@@ -34,8 +35,9 @@
 }
 
 .gift-icon {
-  content: ' ';
-  mask-image: url('../img/icon-gift.svg');
+  content: " ";
+  mask-image: url("../img/icon-gift.svg");
+
   @include mask-icon;
   background-color: $accent-background;
   mask-size: contain;
@@ -44,8 +46,9 @@
 }
 
 .food-icon {
-  content: ' ';
-  mask-image: url('../img/icon-burger.svg');
+  content: " ";
+  mask-image: url("../img/icon-burger.svg");
+
   @include mask-icon;
   background-color: $accent-background;
   mask-size: contain;
@@ -63,6 +66,7 @@
 
 .advantages__description-wrapper {
   text-align: center;
+
   &--accent {
     color: $menu-font-color;
     background-color: $accent-background;
