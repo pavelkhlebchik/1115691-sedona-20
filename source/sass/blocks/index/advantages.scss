@@ -6,8 +6,9 @@
 .advantages__item {
   display: flex;
   flex-direction: column;
+
   &--hidden-advantage {
-    background-color: $hidden-advantage-background;
+   background-color: $hidden-advantage-background;
   }
 }
 
