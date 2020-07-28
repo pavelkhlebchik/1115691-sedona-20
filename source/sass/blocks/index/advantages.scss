@@ -1,5 +1,6 @@
 .advantages__list {
   @include list-style;
+  outline: red 1px solid;
 }
 
 .advantages__item {
