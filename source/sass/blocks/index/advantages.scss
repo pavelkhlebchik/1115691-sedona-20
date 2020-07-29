@@ -20,40 +20,48 @@
 
 .advantages__feature-item {
   display: flex;
-  justify-content: space-between;
 }
 
-.home-icon {
-  content: " ";
-  mask-image: url("../img/icon-house.svg");
+.advantages__feature-wrapper--home-icon {
+  &::before {
+    display: block;
+    content: " ";
+    mask-image: url("../img/icon-house.svg");
 
-  @include mask-icon;
-  background-color: $accent-background;
-  mask-size: contain;
-  width: 65px;
-  height: 55px;
+    @include mask-icon;
+    background-color: $accent-background;
+    mask-size: contain;
+    width: 65px;
+    height: 55px;
+  }
 }
 
-.gift-icon {
-  content: " ";
-  mask-image: url("../img/icon-gift.svg");
+.advantages__feature-wrapper--gift-icon {
+  &::before {
+    display: block;
+    content: " ";
+    mask-image: url("../img/icon-gift.svg");
 
-  @include mask-icon;
-  background-color: $accent-background;
-  mask-size: contain;
-  width: 45px;
-  height: 55px;
+    @include mask-icon;
+    background-color: $accent-background;
+    mask-size: contain;
+    width: 45px;
+    height: 55px;
+  }
 }
 
-.food-icon {
-  content: " ";
-  mask-image: url("../img/icon-burger.svg");
+.advantages__feature-wrapper--food-icon {
+  &::before {
+    content: " ";
+    display: block;
+    mask-image: url("../img/icon-burger.svg");
 
-  @include mask-icon;
-  background-color: $accent-background;
-  mask-size: contain;
-  width: 65px;
-  height: 55px;
+    @include mask-icon;
+    background-color: $accent-background;
+    mask-size: contain;
+    width: 65px;
+    height: 55px;
+  }
 }
 
 .advantage__feature-title {
