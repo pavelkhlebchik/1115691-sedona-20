@@ -1,0 +1,50 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  outline: fuchsia 1px solid;
+
+  @include menu-font;
+}
+
+.page-header__logo {
+  align-self: center;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-navigation__list {
+  background-color: $accent-background;
+
+  @include list-style;
+}
+
+.main-navigation__item:not(.main-navigation__item--active) {
+  &:hover {
+    background-color: $hover-background;
+  }
+
+  &:active {
+    background-color: $active-background;
+  }
+}
+
+.main-navigation__item--active {
+  background-color: $active-background;
+  cursor: default;
+}
+
+.main-navigation__link {
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  text-align: center;
+  color: $menu-font-color;
+
+  &:active {
+    opacity: $font-active-opacity;
+  }
+}

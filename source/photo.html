@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
 
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" alt="Логотип Седоны">
+      <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">
@@ -24,7 +25,7 @@
           </a>
         </li>
         <li class="main-navigation__item main-navigation__item--active">
-          <a class="main-navigation__link">
+          <a class="main-navigation__link main-navigation__link--active">
 
             Фото и видео
           </a>
@@ -45,6 +46,11 @@
 
   <main class="page-main">
     <section class="inner-page-intro">
+      <div class="inner-page-intro__bg">
+        <div class="inner-page-intro__bg-text">
+        </div>
+      </div>
+      <div class="inner-page-intro__text-wrapper">
       <h1 class="inner-page-intro__title">
         Фото и видео
       </h1>
@@ -52,13 +58,14 @@
         Не можете решиться на путешествие из-за курса?
         Фотографии помогут вам забыть о политике и экономике.
       </p>
+      </div>
     </section>
     <section class="photogallery">
       <h2 class="visually-hidden">Фотогалерея Седоны</h2>
       <ul class="photogallery__list">
         <li class="photogallery__item">
           <div class="photogallery__image">
-            <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="Фото из галлереи">
+            <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
           </div>
           <div class="photogallery__image-description">
             <h3 class="photogallery__image-title">
@@ -74,7 +81,7 @@
         </li>
         <li class="photogallery__item">
           <div class="photogallery__image">
-            <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="Фото из галлереи">
+            <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
           </div>
           <div class="photogallery__image-description">
             <h3 class="photogallery__image-title">
@@ -90,7 +97,7 @@
         </li>
         <li class="photogallery__item">
           <div class="photogallery__image">
-            <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="Фото из галлереи">
+            <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
           </div>
           <div class="photogallery__image-description">
             <h3 class="photogallery__image-title">
@@ -106,7 +113,7 @@
         </li>
         <li class="photogallery__item">
           <div class="photogallery__image">
-            <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="Фото из галлереи">
+            <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
           </div>
           <div class="photogallery__image-description">
             <h3 class="photogallery__image-title">
@@ -125,6 +132,9 @@
     <section class="video-presentation">
       <h2 class="visually-hidden">Просторы Седоны на видео</h2>
       <div class="video-presentation__wrapper">
+        <img class="video-presentation__preview" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Превью видео">
+      </div>
+      <div class="video-presentation__player-menu">
 
       </div>
     </section>
@@ -132,21 +142,21 @@
 
   <footer class="page-footer">
     <div class="socials">
-      <p class="socials__hashtag">#SEDONAIZDOMA</p>
+      <p class="socials__hashtag">#VISITSEDONA</p>
       <ul class="socials__list">
         <li class="socials__item">
-          <a class="socials__link twitter-icon"></a>
+          <a class="socials__link twitter-icon" href=""></a>
         </li>
         <li class="socials__item">
-          <a class="socials__link facebook-icon"></a>
+          <a class="socials__link facebook-icon" href=""></a>
         </li>
         <li class="socials__item">
-          <a class="socials__link youtube-icon"></a>
+          <a class="socials__link youtube-icon" href=""></a>
         </li>
       </ul>
       <div class="socials__link-dev">
-        <span>Разработано</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="socials__link-text">Разработано</span>
+        <a class="socials__academy-icon" href="https://htmlacademy.ru/intensive/adaptive">
         </a>
       </div>
     </div>

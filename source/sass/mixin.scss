@@ -1,0 +1,57 @@
+@mixin menu-font {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+@mixin title-font {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+@mixin advantages-content-font {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+@mixin main-intro-font {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+@mixin inner-intro-font {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@mixin link-font {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+@mixin list-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin background-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@mixin mask-icon {
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+@mixin none-margin-padding {
+  margin: 0;
+  padding: 0;
+}
