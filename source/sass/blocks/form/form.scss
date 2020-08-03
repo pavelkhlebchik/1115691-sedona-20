@@ -1,6 +1,7 @@
 .form__item {
-  border: none;
   @include none-margin-padding;
+
+  border: none;
 }
 
 .form__title {
@@ -9,7 +10,6 @@
 
 .form__input {
   @include list-style;
-
 }
 
 .input-list__label {
