@@ -1,7 +1,59 @@
-.form__item
+.form__item {
+  border: none;
+  @include none-margin-padding;
+}
+
+.form__title {
+  @include title-font;
+}
 
 .form__input {
   @include list-style;
 
+}
 
+.input-list__label {
+  @include main-intro-font;
+}
+
+.input-list__input {
+  @include title-font;
+
+  color: $basic-black;
+  border: none;
+  background-color: $basic-form;
+
+  &:hover {
+    background-color: $hover-form;
+  }
+
+  &:focus {
+    background-color: $basic-background;
+    border: 4px solid $hover-form;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $basic-black;
+  }
+}
+
+.radio-list__label,
+.checkbox-list__label {
+  @include title-font;
+
+  text-transform: none;
+}
+
+.form__button {
+  @include link-font;
+
+  background-color: $accent-background;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: $menu-font-color;
+  border: none;
+  text-transform: uppercase;
+  width: 280px;
 }
