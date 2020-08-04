@@ -1,4 +1,16 @@
+.video-presentation__title {
+  @include title-font;
+}
+
+.video-presentation__description {
+  @include inner-intro-font;
+}
+
 .video-presentation__wrapper {
+  text-align: center;
+}
+
+.video-presentation__player-wrapper {
   position: relative;
 }
 

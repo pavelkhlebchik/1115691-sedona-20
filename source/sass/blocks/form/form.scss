@@ -30,8 +30,7 @@
 
   &:focus {
     background-color: $basic-background;
-    border: 4px solid $hover-form;
-    outline: none;
+    outline: 4px solid $hover-form;
   }
 
   &::placeholder {
