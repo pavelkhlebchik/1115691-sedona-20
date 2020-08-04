@@ -1,3 +1,25 @@
 .search-hotels {
   outline: orangered 1px solid;
 }
+
+.search-hotels__title {
+  @include link-font;
+}
+
+.search-hotels__description {
+  @include inner-intro-font;
+}
+
+.search-hotels__link {
+  @include link-font;
+
+  display: inline-block;
+  background-color: $accent-background;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: $menu-font-color;
+  border: none;
+  text-transform: uppercase;
+  width: 280px;
+}

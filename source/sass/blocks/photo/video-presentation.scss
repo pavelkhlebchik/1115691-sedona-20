@@ -1,0 +1,32 @@
+.video-presentation__title {
+  @include title-font;
+}
+
+.video-presentation__description {
+  @include inner-intro-font;
+}
+
+.video-presentation__wrapper {
+  text-align: center;
+}
+
+.video-presentation__player-wrapper {
+  position: relative;
+}
+
+.video-presentation__player-range {
+  width: 280px;
+  height: 45px;
+  background-color: $basic-black;
+  opacity: 0.6;
+
+  position: absolute;
+  bottom: 3px;
+  right: 20px;
+}
+
+.video-presentation__player-menu {
+  width: 280px;
+  height: 66px;
+  background-color: $basic-form;
+}
