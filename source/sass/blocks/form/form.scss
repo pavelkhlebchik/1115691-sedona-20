@@ -16,7 +16,8 @@
   @include main-intro-font;
 }
 
-.input-list__input {
+.input-list__input,
+.form__comment {
   @include title-font;
 
   color: $basic-black;
@@ -43,6 +44,17 @@
   @include title-font;
 
   text-transform: none;
+}
+
+.form__comment {
+  width: 235px;
+  height: 118px;
+  resize: none;
+
+  padding-top: 13px;
+  padding-bottom: 29px;
+  padding-right: 23px;
+  padding-left: 21px;
 }
 
 .form__button {
