@@ -1,36 +1,46 @@
 .page-intro {
   display: flex;
   flex-direction: column;
-  outline: green 1px solid;
+  margin-bottom: 27px;
 }
 
 .page-intro__bg {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 389px;
+  background-color: $accent-background;
+  width: 100%;
+  margin-bottom: 23px;
   position: relative;
-  margin-bottom: 39px;
 
   &::after {
     content: " ";
-    width: 320px;
+    width: 100%;
     height: 27px;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
-    background-position: center;
-    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 322px 27px;
+    background-position-x: -1px;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }
 
 .page-intro__bg-text {
-  background-image: url("../img/text-sedona-index.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 214px;
-  margin-top: 90px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 83px;
 }
 
 .page-intro__text-wrapper {
@@ -45,8 +55,10 @@
 
 .page-intro__title {
   @include title-font;
+  margin-bottom: 30px;
 }
 
 .page-intro__description {
   @include main-intro-font;
+  @include none-margin-padding;
 }
