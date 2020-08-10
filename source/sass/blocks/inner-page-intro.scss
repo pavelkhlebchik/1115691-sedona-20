@@ -4,9 +4,11 @@
 
 .inner-page-intro__bg {
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 50% 100%;
-  background-size: 241% 244%;
-  height: 158px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $accent-background;
+  width: 100%;
   position: relative;
 
   &::after {
@@ -19,14 +21,19 @@
     position: absolute;
     bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
 }
 
 .inner-page-intro__bg-text {
-  background-image: url("../img/text-sedona.svg");
-  background-position: 50% 44%;
-  background-size: 230px;
-  background-repeat: no-repeat;
-  height: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .inner-page-intro__title {
