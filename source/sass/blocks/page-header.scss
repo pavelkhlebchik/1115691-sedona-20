@@ -1,9 +1,8 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-
+  @include flex-column;
   @include menu-font;
+
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -35,9 +34,8 @@
 }
 
 .main-navigation {
-  display: flex;
+  @include flex-column;
   width: 100%;
-  flex-direction: column;
   order: -1;
   position: relative;
 

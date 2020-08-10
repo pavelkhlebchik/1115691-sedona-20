@@ -1,9 +1,23 @@
 .search-hotels {
-  outline: orangered 1px solid;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.search-hotels__wrapper {
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }
 
 .search-hotels__title {
   @include link-font;
+  @include none-margin-padding;
 }
 
 .search-hotels__description {
@@ -22,4 +36,8 @@
   border: none;
   text-transform: uppercase;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

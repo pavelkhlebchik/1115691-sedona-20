@@ -102,12 +102,12 @@
     background-color: $accent-background;
   }
 
-  &--n2 {
-    order: 1;
-  }
-
   @media (min-width: $tablet-width) {
     width: 34%;
+
+    &--n2 {
+      order: 1;
+    }
   }
 
   &--other-advantage {
