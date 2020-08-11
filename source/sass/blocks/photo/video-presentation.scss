@@ -1,3 +1,14 @@
+.video-presentation {
+
+  @media (min-width: $tablet-width) {
+  margin: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 200px;
+  }
+}
+
 .video-presentation__title {
   @include title-font;
 }
@@ -19,14 +30,22 @@
   height: 45px;
   background-color: $basic-black;
   opacity: 0.6;
-
   position: absolute;
   bottom: 3px;
   right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    right: 0px;
+  }
 }
 
 .video-presentation__player-menu {
   width: 280px;
   height: 66px;
   background-color: $basic-form;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
