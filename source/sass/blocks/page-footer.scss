@@ -1,5 +1,19 @@
 .page-footer {
-  outline: blue 1px solid;
+  display: flex;
+  justify-content: center;
+}
+
+.socials {
+  @include flex-column;
+
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .socials__hashtag {
@@ -8,6 +22,8 @@
 
 .socials__list {
   @include list-style;
+
+  display: flex;
 }
 
 .socials__item {
@@ -17,6 +33,7 @@
   align-items: center;
   justify-content: center;
   background-color: $accent-background;
+  margin-right: 10px;
 
   &:hover {
     background-color: $hover-background;
@@ -61,6 +78,8 @@
 
 .socials__link-dev {
   @include main-intro-font;
+
+  display: flex;
 }
 
 .socials__academy-icon {

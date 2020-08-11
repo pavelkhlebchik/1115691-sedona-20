@@ -3,174 +3,171 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
+  <div class="wrapper">
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a href="index.html" class="main-navigation__link">
+              Главная
+            </a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--active">
+            <a class="main-navigation__link main-navigation__link--active">
+              Фото и видео
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="form.html" class="main-navigation__link">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="main-navigation__link">
+              htmlacademy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
-    </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-navigation__list">
-
-        <li class="main-navigation__item main-navigation__item">
-          <a href="index.html" class="main-navigation__link">
-            Главная
-          </a>
-        </li>
-        <li class="main-navigation__item main-navigation__item--active">
-          <a class="main-navigation__link main-navigation__link--active">
-
+    <main class="page-main">
+      <section class="inner-page-intro">
+        <div class="inner-page-intro__bg">
+          <img class="inner-page-intro__bg-text" src="../img/text-sedona.svg" width="230" height="214" alt="Текстовое описание баннера">
+        </div>
+        <div class="inner-page-intro__text-wrapper">
+          <h1 class="inner-page-intro__title">
             Фото и видео
-          </a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="form.html" class="main-navigation__link">
-            Форма отзыва
-          </a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="main-navigation__link">
-            htmlacademy
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="page-main">
-    <section class="inner-page-intro">
-      <div class="inner-page-intro__bg">
-        <div class="inner-page-intro__bg-text">
+          </h1>
+          <p class="inner-page-intro__description">
+            Не можете решиться на путешествие из-за курса?
+            Фотографии помогут вам забыть о политике и экономике.
+          </p>
         </div>
-      </div>
-      <div class="inner-page-intro__text-wrapper">
-        <h1 class="inner-page-intro__title">
-          Фото и видео
-        </h1>
-        <p class="inner-page-intro__description">
-          Не можете решиться на путешествие из-за курса?
-          Фотографии помогут вам забыть о политике и экономике.
-        </p>
-      </div>
-    </section>
-    <section class="photogallery">
-      <h2 class="visually-hidden">Фотогалерея Седоны</h2>
-      <ul class="photogallery__list">
-        <li class="photogallery__item">
-          <div class="photogallery__image">
-            <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
+      </section>
+      <section class="photogallery">
+        <h2 class="visually-hidden">Фотогалерея Седоны</h2>
+        <ul class="photogallery__list">
+          <li class="photogallery__item photogallery__item--head">
+            <div class="photogallery__image">
+              <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
+            </div>
+            <div class="photogallery__image-description">
+              <h3 class="photogallery__image-title">
+                неродные просторы
+              </h3>
+              <p class="photogallery__image-author">
+                Автор фото: Борис
+              </p>
+              <p class="photogallery__likes">
+                1350
+              </p>
+            </div>
+          </li>
+          <li class="photogallery__item">
+            <div class="photogallery__image">
+              <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
+            </div>
+            <div class="photogallery__image-description">
+              <h3 class="photogallery__image-title">
+                Местная растительность
+              </h3>
+              <p class="photogallery__image-author">
+                Автор фото: Сергей
+              </p>
+              <p class="photogallery__likes">
+                143
+              </p>
+            </div>
+          </li>
+          <li class="photogallery__item">
+            <div class="photogallery__image">
+              <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
+            </div>
+            <div class="photogallery__image-description">
+              <h3 class="photogallery__image-title">
+                Дорога на север
+              </h3>
+              <p class="photogallery__image-author">
+                Автор фото: Петр
+              </p>
+              <p class="photogallery__likes">
+                96
+              </p>
+            </div>
+          </li>
+          <li class="photogallery__item">
+            <div class="photogallery__image">
+              <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
+            </div>
+            <div class="photogallery__image-description">
+              <h3 class="photogallery__image-title">
+                Мост дьявола
+              </h3>
+              <p class="photogallery__image-author">
+                Автор фото: Антон
+              </p>
+              <p class="photogallery__likes">
+                254
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="video-presentation">
+        <div class="video-presentation__wrapper">
+          <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
+          <p class="video-presentation__description">
+            Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+          </p>
+        </div>
+        <div class="video-presentation__player-wrapper">
+          <img class="video-presentation__preview" src="img/video-mobile@1x.jpg" width="320" height="201"
+            alt="Превью видео">
+          <div class="video-presentation__player-range">
+
           </div>
-          <div class="photogallery__image-description">
-            <h3 class="photogallery__image-title">
-              неродные просторы
-            </h3>
-            <p class="photogallery__image-author">
-              Автор фото: Борис
-            </p>
-            <p class="photogallery__likes">
-              1350
-            </p>
-          </div>
-        </li>
-        <li class="photogallery__item">
-          <div class="photogallery__image">
-            <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
-          </div>
-          <div class="photogallery__image-description">
-            <h3 class="photogallery__image-title">
-              Местная растительность
-            </h3>
-            <p class="photogallery__image-author">
-              Автор фото: Сергей
-            </p>
-            <p class="photogallery__likes">
-              143
-            </p>
-          </div>
-        </li>
-        <li class="photogallery__item">
-          <div class="photogallery__image">
-            <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
-          </div>
-          <div class="photogallery__image-description">
-            <h3 class="photogallery__image-title">
-              Дорога на север
-            </h3>
-            <p class="photogallery__image-author">
-              Автор фото: Петр
-            </p>
-            <p class="photogallery__likes">
-              96
-            </p>
-          </div>
-        </li>
-        <li class="photogallery__item">
-          <div class="photogallery__image">
-            <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
-          </div>
-          <div class="photogallery__image-description">
-            <h3 class="photogallery__image-title">
-              Мост дьявола
-            </h3>
-            <p class="photogallery__image-author">
-              Автор фото: Антон
-            </p>
-            <p class="photogallery__likes">
-              254
-            </p>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="video-presentation">
-      <div class="video-presentation__wrapper">
-        <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
-        <p classs="video-presentation__description">
-          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-        </p>
-      </div>
-      <div class="video-presentation__player-wrapper">
-        <img class="video-presentation__preview" src="img/video-mobile@1x.jpg" width="320" height="201"
-          alt="Превью видео">
-        <div class="video-presentation__player-range">
+        </div>
+        <div class="video-presentation__player-menu">
 
         </div>
-      </div>
-      <div class="video-presentation__player-menu">
+      </section>
+    </main>
 
+    <footer class="page-footer">
+      <div class="socials">
+        <p class="socials__hashtag">#VISITSEDONA</p>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link twitter-icon" href=""></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link facebook-icon" href=""></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link youtube-icon" href=""></a>
+          </li>
+        </ul>
+        <div class="socials__link-dev">
+          <span class="socials__link-text">Разработано</span>
+          <a class="socials__academy-icon" href="https://htmlacademy.ru/intensive/adaptive">
+          </a>
+        </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="page-footer">
-    <div class="socials">
-      <p class="socials__hashtag">#VISITSEDONA</p>
-      <ul class="socials__list">
-        <li class="socials__item">
-          <a class="socials__link twitter-icon" href=""></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link facebook-icon" href=""></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link youtube-icon" href=""></a>
-        </li>
-      </ul>
-      <div class="socials__link-dev">
-        <span class="socials__link-text">Разработано</span>
-        <a class="socials__academy-icon" href="https://htmlacademy.ru/intensive/adaptive">
-        </a>
-      </div>
-    </div>
-  </footer>
-
+    </footer>
+  </div>
 </body>
 
 </html>

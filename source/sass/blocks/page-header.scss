@@ -1,24 +1,77 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-  outline: fuchsia 1px solid;
-
+  @include flex-column;
   @include menu-font;
+
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    position: relative;
+  }
 }
 
 .page-header__logo {
-  align-self: center;
+  background-image: url("../img/logo-sedona-mobile.svg");
+  width: 102px;
+  height: 84px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+  @include background-img;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/logo-sedona-tablet.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/logo-sedona-desktop.svg");
+    width: 187px;
+    height: 97px;
+  }
 }
 
 .main-navigation {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
+
+  width: 100%;
+  order: -1;
+  position: relative;
+}
+
+.main-navigation__toggle {
+  align-self: flex-end;
+  background-color: $basic-background;
+  background-image: url("../img/icon-menu.svg");
+
+  @include background-img;
+
+  width: 23px;
+  height: 22px;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  margin-right: 20px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-navigation__list {
+  display: none;
+  width: 100%;
   background-color: $accent-background;
+  position: absolute;
 
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    background-color: $basic-background;
+  }
 }
 
 .main-navigation__item:not(.main-navigation__item--active) {
@@ -29,11 +82,31 @@
   &:active {
     background-color: $active-background;
   }
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-background;
+
+    &:hover {
+      background-color: $basic-background;
+    }
+  }
+}
+
+.main-navigation__item {
+  width: 20%;
+
+  &:nth-child(2) {
+    margin-right: 20%;
+  }
 }
 
 .main-navigation__item--active {
   background-color: $active-background;
   cursor: default;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-background;
+  }
 }
 
 .main-navigation__link {
@@ -46,5 +119,23 @@
 
   &:active {
     opacity: $font-active-opacity;
+  }
+
+  @media (min-width: $tablet-width) {
+    color: $content-font-color;
+
+    &:hover {
+      color: $font-menu-hover;
+    }
+  }
+}
+
+.main-navigation__link--active {
+  @media (min-width: $tablet-width) {
+    color: $active-link;
+
+    &:hover {
+      color: $active-link-hover;
+    }
   }
 }
