@@ -37,15 +37,16 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    flex-direction: row;
   }
 }
 
 .advantages__feature-item {
   display: flex;
-}
+  flex-direction: row;
+  width: 100%;
 
-.advantages__feature-wrapper--home-icon {
-  &::before {
+  &--home-icon::before {
     display: block;
     content: " ";
     mask-image: url("../img/icon-house.svg");
@@ -56,10 +57,8 @@
     width: 65px;
     height: 55px;
   }
-}
 
-.advantages__feature-wrapper--gift-icon {
-  &::before {
+  &--gift-icon::before {
     display: block;
     content: " ";
     mask-image: url("../img/icon-gift.svg");
@@ -70,10 +69,8 @@
     width: 45px;
     height: 55px;
   }
-}
 
-.advantages__feature-wrapper--food-icon {
-  &::before {
+  &--food-icon::before {
     content: " ";
     display: block;
     mask-image: url("../img/icon-burger.svg");
@@ -84,14 +81,21 @@
     width: 65px;
     height: 55px;
   }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
-.advantage__feature-title {
+.advantages__feature-title {
   @include title-font;
+  @include none-margin-padding;
 }
 
 .advantages__feature-description {
   @include advantages-content-font;
+  @include none-margin-padding;
 }
 
 .advantages__description-wrapper {
