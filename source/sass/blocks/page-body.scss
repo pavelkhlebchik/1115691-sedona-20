@@ -1,10 +1,6 @@
 .page-body {
   font-family: $basic-font;
   text-transform: uppercase;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-  min-width: 320px;
   min-height: 100%;
 
   @include none-margin-padding;
@@ -21,6 +17,12 @@
 .wrapper {
   width: 320px;
   margin: 0 auto;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 320px;
+  height: 100%;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 100%;
