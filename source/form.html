@@ -68,22 +68,22 @@
             </legend>
             <ul class="form__input input-list">
               <li class="input-list__item">
-                <label class="input-list__label">
+                <label class="input-list__label" for="name">
                   Имя*:
-                  <input class="input-list__input" type="text" name="name" placeholder="Петр">
                 </label>
+                  <input class="input-list__input" type="text" name="name" id="name" placeholder="Петр">
               </li>
               <li class="input-list__item">
-                <label class="input-list__label">
+                <label class="input-list__label" for="surname">
                   Фамилия*:
-                  <input class="input-list__input" type="text" name="surname" placeholder="Иванов">
                 </label>
+                  <input class="input-list__input" type="text" name="surname" id="surname" placeholder="Иванов">
               </li>
               <li class="input-list__item">
-                <label class="input-list__label">
+                <label class="input-list__label" for="patronymic">
                   Отчество:
-                  <input class="input-list__input" type="text" name="patronymic" placeholder="Александрович">
                 </label>
+                  <input class="input-list__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
@@ -92,21 +92,21 @@
               Контактная информация:
             </legend>
             <ul class="form__input input-list">
-              <li class="input-list__item">
-                <label class="input-list__label">
+              <li class="input-list__item input-list__item--for-contact">
+                <label class="input-list__label" for="phone">
                   Контактный телефон*:
-                  <input class="input-list__input" type="tel" name="phone" placeholder="Введите телефон">
                 </label>
+                  <input class="input-list__input" type="tel" name="phone" id="phone" placeholder="Введите телефон">
               </li>
-              <li class="input-list__item">
-                <label class="input-list__label">
+              <li class="input-list__item input-list__item--for-contact">
+                <label class="input-list__label" for="email">
                   Электронная почта*:
-                  <input class="input-list__input" type="email" name="email" placeholder="Ведите e-mail">
                 </label>
+                  <input class="input-list__input" type="email" name="email" id="email" placeholder="Ведите e-mail">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__item">
+          <fieldset class="form__item form__item--for-feeling">
             <legend class="form__title">
               Ваше общее впечатление:
             </legend>
@@ -162,16 +162,19 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__item">
-            <label class="form__title">
+          <div class="form__item form__item--for-comment">
+            <label class="form__title" for="comment">
               Опишите свои эмоции:
-              <textarea class="form__comment" name="comment"
-                placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
+              <textarea class="form__comment" name="comment" id="comment"
+                placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
+          <div class="form__wrapper form__wrapper--down">
           <button class="form__button" type="submit">
             Отправить отзыв
           </button>
+          <p class="form__required-field">* — обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>
