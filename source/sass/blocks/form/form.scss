@@ -2,6 +2,14 @@
   @include flex-column;
 
   margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 120px;
+  }
 }
 
 .form__wrapper {
@@ -52,6 +60,35 @@
 
 .input-list {
   @include flex-column;
+
+  @media (min-width: $desktop-width) {
+    &--for-contact {
+      flex-direction: row;
+    }
+  }
+}
+
+.checkbox-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include none-margin-padding;
+  }
+}
+
+.checkbox-list__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
 }
 
 .input-list__item {

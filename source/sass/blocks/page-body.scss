@@ -15,12 +15,11 @@
 }
 
 .wrapper {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  min-width: 320px;
   height: 100%;
   overflow: hidden;
 

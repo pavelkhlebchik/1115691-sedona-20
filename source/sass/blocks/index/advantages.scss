@@ -1,3 +1,4 @@
+
 .advantages__list {
   @include list-style;
 
@@ -85,6 +86,13 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
     flex-wrap: wrap;
+
+    &--food-icon {
+      order: 1;
+    }
+    &--gift-icon {
+      order: 2;
+    }
   }
 }
 
