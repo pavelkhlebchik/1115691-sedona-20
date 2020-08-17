@@ -1,5 +1,5 @@
 .inner-page-intro {
-  outline: green 1px solid;
+  @include flex-column;
 }
 
 .inner-page-intro__bg {

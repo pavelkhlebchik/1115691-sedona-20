@@ -1,15 +1,110 @@
+.form {
+  @include flex-column;
+
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 120px;
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    &--down {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+
 .form__item {
   @include none-margin-padding;
+  @include flex-column;
 
   border: none;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    &--for-name,
+    &--for-feeling {
+      width: 50%;
+    }
+
+    &--for-name {
+      order: -1;
+    }
+
+    &--for-feeling {
+      order: -2;
+    }
+  }
 }
 
 .form__title {
   @include title-font;
+
+  text-align: center;
 }
 
 .form__input {
   @include list-style;
+}
+
+.input-list {
+  @include flex-column;
+
+  @media (min-width: $desktop-width) {
+    &--for-contact {
+      flex-direction: row;
+    }
+  }
+}
+
+.checkbox-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include none-margin-padding;
+  }
+}
+
+.checkbox-list__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
+}
+
+.input-list__item {
+  display: flex;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    &--for-contact {
+      @include flex-column;
+    }
+  }
+}
+
+.input-list__input {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .input-list__label {
@@ -54,6 +149,12 @@
   padding-bottom: 29px;
   padding-right: 23px;
   padding-left: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 160px;
+    box-sizing: border-box;
+  }
 }
 
 .form__button {
@@ -67,4 +168,12 @@
   border: none;
   text-transform: uppercase;
   width: 280px;
+}
+
+.form__required-field {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
 }
