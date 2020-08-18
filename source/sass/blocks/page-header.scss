@@ -15,14 +15,18 @@
   width: 102px;
   height: 84px;
   position: absolute;
-  top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
 
   @include background-img;
 
+  @media (max-width: $mobile-width-only) {
+    bottom: 200px;
+  }
+
   @media (min-width: $tablet-width) {
+    top: 0;
     background-image: url("../img/logo-sedona-tablet.svg");
   }
 
@@ -55,15 +59,40 @@
   margin-right: 20px;
   border: none;
 
+  &--close {
+    background-color: transparent;
+    background-image: url("../img/icon-cross.svg");
+
+    @include background-img;
+
+    width: 23px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    margin-right: 20px;
+    border: none;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .main-navigation__list {
-  display: block;
   width: 100%;
   background-color: $accent-background;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    order: -1;
+  }
 
   @include list-style;
 
