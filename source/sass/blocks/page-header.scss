@@ -22,7 +22,7 @@
   @include background-img;
 
   @media (max-width: $mobile-width-only) {
-    bottom: 200px;
+    bottom: 209px;
   }
 
   @media (min-width: $tablet-width) {
@@ -157,7 +157,7 @@
 .main-navigation__link {
   display: block;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 8px;
   padding-bottom: 6px;
   text-align: center;
   color: $menu-font-color;
