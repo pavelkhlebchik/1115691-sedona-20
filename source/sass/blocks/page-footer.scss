@@ -18,12 +18,15 @@
 
 .socials__hashtag {
   @include link-font;
+
+  margin-bottom: 33px;
 }
 
 .socials__list {
   @include list-style;
 
   display: flex;
+  margin-bottom: 40px;
 }
 
 .socials__item {
@@ -80,6 +83,7 @@
   @include main-intro-font;
 
   display: flex;
+  align-items: center;
 }
 
 .socials__academy-icon {

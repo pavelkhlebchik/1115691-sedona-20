@@ -8,6 +8,10 @@
   background-color: $accent-background;
 }
 
+.advantages {
+  margin-bottom: 33px;
+}
+
 .advantages__list {
   @include list-style;
 
@@ -27,6 +31,8 @@
 
   &--other-advantage {
     background-color: $other-advantage-background;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -134,6 +140,7 @@
   &--accent {
     color: $menu-font-color;
     background-color: $accent-background;
+    padding-top: 39px;
   }
 
   @media (min-width: $tablet-width) {
@@ -145,24 +152,26 @@
   }
 
   &--other-advantage {
-    @media (min-width: $tablet-width) {
-      width: 100%;
-    }
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 25px;
+  }
+
+  &--other-advantage {
+    border-top: 1px solid $decorative-line;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
   }
 }
 
 .advantages__title {
   @include title-font;
   @include none-margin-padding;
-
-  // margin-top: 18px;
 }
 
 .advantages__number,
 .advantages__description {
   @include advantages-content-font;
-}
-
-.advantages__description {
-  // margin-bottom: 39px;
 }
