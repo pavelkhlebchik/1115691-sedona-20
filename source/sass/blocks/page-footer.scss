@@ -1,6 +1,7 @@
 .page-footer {
   display: flex;
   justify-content: center;
+  padding-bottom: 36px;
 }
 
 .socials {
@@ -20,6 +21,10 @@
   @include link-font;
 
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    @include none-margin-padding;
+  }
 }
 
 .socials__list {
@@ -27,6 +32,10 @@
 
   display: flex;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .socials__item {

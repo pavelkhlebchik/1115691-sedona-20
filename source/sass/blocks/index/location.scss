@@ -1,3 +1,7 @@
 .location {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
 }

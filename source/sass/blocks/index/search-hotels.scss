@@ -1,15 +1,17 @@
 .search-hotels {
+  margin-bottom: 49px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 58px;
   }
 }
 
 .search-hotels__wrapper {
   text-align: center;
   width: 100%;
-  margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
     width: 458px;
@@ -19,10 +21,19 @@
 .search-hotels__title {
   @include link-font;
   @include none-margin-padding;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 37px;
+  }
 }
 
 .search-hotels__description {
   @include inner-intro-font;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+  }
 }
 
 .search-hotels__link {

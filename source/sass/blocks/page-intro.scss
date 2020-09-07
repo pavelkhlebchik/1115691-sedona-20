@@ -28,6 +28,11 @@
   margin: 0 auto;
   padding-top: 90px;
   padding-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }
 
 .page-intro__bg-trangle {
@@ -51,6 +56,10 @@
 .page-intro__title {
   @include title-font;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    @include link-font;
+  }
 }
 
 .page-intro__description {
