@@ -28,13 +28,27 @@
 }
 
 .photogallery__item {
-  &--head {
-    grid-column: 1/3;
+  @media (max-width: $mobile-width-only) {
+    @include decorative-border;
+    @include flex-column;
 
+    align-items: center;
+    width: 100%;
+    padding-top: 22px;
+    padding-bottom: 15px;
+  }
+  &--head {
+    @media (min-width: $tablet-width) {
+      grid-column: 1/3;
+    }
     @media (min-width: $desktop-width) {
       grid-column: 1/4;
     }
   }
+}
+
+.photogallery__image-description {
+  width: 280px;
 }
 
 .photogallery__image-title,

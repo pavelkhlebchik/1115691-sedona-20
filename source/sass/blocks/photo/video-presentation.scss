@@ -1,4 +1,6 @@
 .video-presentation {
+  margin-bottom: 130px;
+
   @media (min-width: $tablet-width) {
     margin: 0 60px;
   }
@@ -17,6 +19,10 @@
 }
 
 .video-presentation__wrapper {
+@media (max-width: $mobile-width-only) {
+  @include decorative-border;
+}
+
   text-align: center;
 }
 
@@ -25,13 +31,13 @@
 }
 
 .video-presentation__player-range {
-  width: 280px;
+  width: 87.5%;
   height: 45px;
   background-color: $basic-black;
   opacity: 0.6;
   position: absolute;
   bottom: 3px;
-  right: 20px;
+  right: 7%;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -40,9 +46,12 @@
 }
 
 .video-presentation__player-menu {
-  width: 280px;
+  width: 87.5%;
   height: 66px;
   background-color: $basic-form;
+  position: absolute;
+  right: 7%;
+  top: 201px;
 
   @media (min-width: $tablet-width) {
     display: none;

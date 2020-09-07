@@ -181,10 +181,11 @@
   }
 
   &--other-advantage {
+    @include decorative-border;
+
     margin-right: 15px;
     margin-left: 15px;
     padding-top: 25px;
-    border-top: 1px solid $decorative-line;
 
     @media (min-width: $tablet-width) {
       @include none-margin-padding;
