@@ -31,6 +31,7 @@
 
   border: none;
   width: 100%;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     &--for-name,
@@ -50,8 +51,12 @@
 
 .form__title {
   @include title-font;
+  @include decorative-border;
 
   text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .form__input {
@@ -95,20 +100,21 @@
   display: flex;
   width: 100%;
 
-  @media (min-width: $tablet-width) {
-    &--for-contact {
-      @include flex-column;
-    }
+  &--for-contact {
+    @include flex-column;
   }
 }
 
 .input-list__input {
   width: 100%;
   box-sizing: border-box;
+  padding-left: 22px;
 }
 
 .input-list__label {
   @include main-intro-font;
+
+  margin-right: 10px;
 }
 
 .input-list__input,
