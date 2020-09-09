@@ -49,6 +49,13 @@
 
 .photogallery__image-description {
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    background-color: $basic-form;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .photogallery__image-title,
