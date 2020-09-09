@@ -24,6 +24,9 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 100% 100%;
+    height: 291px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,10 +37,19 @@
 .inner-page-intro__bg-text {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    height: 277px;
+  }
 }
 
 .inner-page-intro__title {
   @include title-font;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .inner-page-intro__description {
@@ -52,4 +64,10 @@
   margin-left: 17px;
   margin-right: 18px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 161px;
+    margin-left: 161px;
+    margin-bottom: 65px;
+  }
 }
