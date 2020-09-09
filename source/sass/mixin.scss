@@ -46,6 +46,10 @@
   background-size: contain;
 }
 
+@mixin photogallery-desktop-bg {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 @mixin mask-icon {
   mask-repeat: no-repeat;
   mask-position: center;
