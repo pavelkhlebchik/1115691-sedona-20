@@ -20,7 +20,7 @@
 .socials__hashtag {
   @include link-font;
 
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     @include none-margin-padding;
@@ -31,7 +31,7 @@
   @include list-style;
 
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -40,12 +40,12 @@
 
 .socials__item {
   width: 48px;
-  height: 46px;
+  height: 47px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: $accent-background;
-  margin-right: 10px;
+  margin-right: 4px;
 
   &:hover {
     background-color: $hover-background;
@@ -93,6 +93,10 @@
 
   display: flex;
   align-items: center;
+}
+
+.socials__link-text {
+  margin-left: 5px;
 }
 
 .socials__academy-icon {

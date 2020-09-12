@@ -1,6 +1,11 @@
 .search-hotels {
   margin-bottom: 49px;
 
+  @media (max-width: $mobile-width-only) {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
@@ -22,6 +27,10 @@
   @include link-font;
   @include none-margin-padding;
 
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 30px;
     margin-bottom: 37px;
@@ -30,6 +39,10 @@
 
 .search-hotels__description {
   @include inner-intro-font;
+
+  @media (min-width: $mobile-width-only) {
+    margin-bottom: 28px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 37px;
@@ -42,7 +55,7 @@
   display: inline-block;
   background-color: $accent-background;
   padding-top: 16px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
   text-align: center;
   color: $menu-font-color;
   border: none;
