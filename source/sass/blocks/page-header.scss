@@ -99,6 +99,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     background-color: $basic-background;
+    margin-top: 6px;
+    margin-bottom: 9px;
   }
 }
 
@@ -139,7 +141,7 @@
     width: 20%;
 
     &:nth-child(2) {
-      margin-right: 20%;
+      margin-right: 20.5%;
     }
   }
 }
@@ -166,6 +168,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    @include menu-tablet-font;
+
     color: $content-font-color;
 
     &:hover {

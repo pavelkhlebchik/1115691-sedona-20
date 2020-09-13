@@ -22,6 +22,12 @@
   line-height: 26px;
 }
 
+@mixin menu-tablet-font {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
 @mixin inner-intro-font {
   font-size: 14px;
   font-weight: 400;

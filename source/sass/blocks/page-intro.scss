@@ -2,6 +2,10 @@
   @include flex-column;
 
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
 }
 
 .page-intro__bg {
@@ -16,6 +20,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,6 +37,8 @@
   @media (min-width: $tablet-width) {
     width: 461px;
     height: 350px;
+    padding-top: 77px;
+    padding-bottom: 34px;
   }
 }
 
@@ -41,6 +48,11 @@
   background-image: url("../img/bg-intro-triangle-mobile.svg");
   background-position: bottom;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    height: 57px;
+  }
 }
 
 .page-intro__text-wrapper {
@@ -51,6 +63,11 @@
   margin-left: 17px;
   margin-right: 18px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 115px;
+    margin-left: 115px;
+  }
 }
 
 .page-intro__title {
