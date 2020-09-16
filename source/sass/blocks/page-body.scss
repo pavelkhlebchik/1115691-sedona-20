@@ -2,6 +2,7 @@
   font-family: $basic-font;
   text-transform: uppercase;
   min-height: 100%;
+  background-color: $hover-form;
 
   @include none-margin-padding;
 
@@ -22,6 +23,7 @@
   align-content: start;
   height: 100%;
   overflow: hidden;
+  background-color: $basic-background;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -29,6 +31,11 @@
 
   @media (min-width: $desktop-width) {
     min-width: 1200px;
+  }
+
+  @media (min-width: 1300px) {
+    max-width: 1300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
 }
 
