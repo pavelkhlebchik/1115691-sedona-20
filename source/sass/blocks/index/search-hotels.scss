@@ -12,6 +12,10 @@
     width: 100%;
     margin-bottom: 58px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .search-hotels__wrapper {
@@ -46,6 +50,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 43px;
   }
 }
 

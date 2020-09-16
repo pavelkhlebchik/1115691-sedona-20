@@ -75,6 +75,10 @@
     margin-top: 80px;
     margin-bottom: 52px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+  }
 }
 
 .advantages__feature-item {
@@ -162,7 +166,13 @@
 
     text-align: center;
     margin-top: 10px;
-    padding: 0 31px;
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 14%;
+    padding-left: 14%;
   }
 }
 
@@ -198,6 +208,10 @@
       padding-right: 32px;
       padding-left: 32px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 48px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -206,6 +220,10 @@
     &--n2 {
       order: 1;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 28%;
   }
 
   &--other-advantage {
@@ -219,12 +237,18 @@
     @media (min-width: $tablet-width) {
       @include none-margin-padding;
 
+      border: none;
       margin-top: -6px;
       padding-top: 43px;
       padding-right: 39px;
       padding-bottom: 30px;
       padding-left: 40px;
       width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 47px;
+      padding-bottom: 48px;
     }
   }
 }
@@ -235,8 +259,9 @@
 
   @media (min-width: $tablet-width) {
     @include link-font;
-    margin-right: 21px;
-    margin-left: 21px;
+
+    width: 150px;
+    margin: 0 auto;
   }
 }
 
@@ -248,5 +273,12 @@
 .advantages__number {
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+  }
+}
+
+.advantages__description {
+  @media (min-width: $desktop-width) {
+    margin-right: 23px;
+    margin-left: 23px;
   }
 }

@@ -25,6 +25,10 @@
   @media (min-width: $tablet-width) {
     @include none-margin-padding;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 32px;
+  }
 }
 
 .socials__list {
@@ -93,6 +97,10 @@
 
   display: flex;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 32px;
+  }
 }
 
 .socials__link-text {
