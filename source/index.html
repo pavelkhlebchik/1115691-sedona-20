@@ -12,6 +12,11 @@
   <div class="wrapper">
     <header class="page-header">
       <a class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="../img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="../img/logo-sedona-tablet.svg">
+          <img src="../img/logo-sedona-mobile.svg">
+        </picture>
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">
@@ -71,7 +76,7 @@
           <div class="advantages__triangle">
           </div>
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--main">
               <div class="advantages__description-wrapper advantages__description-wrapper--accent">
                 <h3 class="advantages__title">
                   Настоящий городок
@@ -83,7 +88,13 @@
                   Седона не аттракцион для туристов, там течет своя жизнь
                 </p>
               </div>
-              <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="фотография городка">
+              <div class="advantages__image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="../img/main-city-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="../img/main-city-tablet@1x.jpg">
+                  <img src="../img/main-city-mobile@1x.jpg" class="advantages__image-advantage">
+                </picture>
+              </div>
               <ul class="advantages__feature-list">
                 <li class="advantages__feature-item advantages__feature-item--home-icon">
                   <div class="advantages__feature-wrapper">
@@ -117,7 +128,7 @@
                 </li>
               </ul>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--main">
               <div
                 class="advantages__description-wrapper advantages__description-wrapper--accent advantages__description-wrapper--n2">
                 <h3 class="advantages__title">
@@ -130,7 +141,13 @@
                   Да, по нему можно пройти! Если вы осмелитесь, конечно
                 </p>
               </div>
-              <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="фотография городка">
+              <div class="advantages__image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="../img/main-bridge-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="../img/main-bridge-tablet@1x.jpg">
+                  <img src="../img/main-bridge-mobile@1x.jpg" class="advantages__image-advantage">
+                </picture>
+              </div>
             </li>
           </ul>
           <ul class="advantages__list advantages__list--other-advantage">
@@ -194,7 +211,13 @@
         <h2 class="visually-hidden">
           Мы на карте
         </h2>
-        <img src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
+        <div class="location__image-wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/bg-map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="../img/bg-map-tablet@1x.jpg">
+            <img src="../img/bg-map-mobile@1x.jpg" class="location__image-map">
+          </picture>
+        </div>
       </section>
     </main>
 
