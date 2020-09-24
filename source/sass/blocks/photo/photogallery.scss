@@ -51,6 +51,20 @@
   }
 }
 
+.photogallery__image {
+  width: 100%;
+}
+
+.photogallery__image-photo {
+  width: 100%;
+
+  &--main {
+    @media (min-width: $tablet-width) {
+      height: 400px;
+    }
+  }
+}
+
 .photogallery__image-description {
   width: 280px;
 

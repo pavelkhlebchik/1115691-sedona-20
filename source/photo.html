@@ -71,7 +71,11 @@
         <ul class="photogallery__list">
           <li class="photogallery__item photogallery__item--head">
             <div class="photogallery__image">
-              <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-sunset-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="../img/photo-sunset-tablet@1x.jpg">
+                <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи" class="photogallery__image-photo photogallery__image-photo--main">
+              </picture>
             </div>
             <div class="photogallery__image-description">
               <div class="photogallery__image-inner">
@@ -89,7 +93,11 @@
           </li>
           <li class="photogallery__item">
             <div class="photogallery__image">
-              <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-cactus-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="../img/photo-cactus-tablet@1x.jpg">
+                <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи" class="photogallery__image-photo">
+              </picture>
             </div>
             <div class="photogallery__image-description">
               <div class="photogallery__image-inner">
@@ -107,7 +115,11 @@
           </li>
           <li class="photogallery__item">
             <div class="photogallery__image">
-              <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-roads-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="../img/photo-roads-tablet@1x.jpg">
+                <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи" class="photogallery__image-photo">
+              </picture>
             </div>
             <div class="photogallery__image-description photogallery__image-description--dark">
               <div class="photogallery__image-inner">
@@ -125,7 +137,11 @@
           </li>
           <li class="photogallery__item">
             <div class="photogallery__image">
-              <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-bridge-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="../img/photo-bridge-tablet@1x.jpg">
+                <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи" class="photogallery__image-photo">
+              </picture>
             </div>
             <div class="photogallery__image-description">
               <div class="photogallery__image-inner">
@@ -151,8 +167,11 @@
           </p>
         </div>
         <div class="video-presentation__player-wrapper">
-          <img class="video-presentation__preview" src="img/video-mobile@1x.jpg" width="320" height="201"
-            alt="Превью видео">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/video-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="../img/video-tablet@1x.jpg">
+            <img src="img/video-mobile@1x.jpg" width="280" height="280" alt="Фото из галлереи" class="video-presentation__image-photo">
+          </picture>
           <div class="video-presentation__player-range">
 
           </div>
