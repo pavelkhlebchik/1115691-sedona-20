@@ -31,7 +31,6 @@
 
   border: none;
   width: 100%;
-  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     &--for-name,
@@ -98,23 +97,69 @@
 
 .input-list__item {
   display: flex;
+  align-items: center;
   width: 100%;
+  margin-bottom: 20px;
 
   &--for-contact {
     @include flex-column;
+    align-items: flex-start;
+    position: relative;
   }
+  // тут пильнуть градиент
+  // &--for-contact::before {
+  //   @include background-img
+
+  //   content: "";
+  //   display: inline-block;
+  //   position: absolute;
+  //   width: 58px;
+  //   height: 58px;
+  //   background-color: $icon-form-background;
+  //   background-image: url(../img/phone.svg);
+  //   top: 26px;
+  //   right: 0;
+  // }
 }
 
 .input-list__input {
   width: 100%;
   box-sizing: border-box;
+  padding-top: 17px;
+  padding-bottom: 16px;
   padding-left: 22px;
+}
+
+.input-list__phone-icon,
+.input-list__mail-icon {
+  width: 51px;
+  height: 51px;
+  background-color: $icon-form-background;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+.input-list__phone-icon {
+  @include background-img;
+
+  background-image: url("../img/icon-phone.svg");
+}
+
+.input-list__mail-icon {
+  @include background-img;
+
+  background-image: url("../img/icon-mail.svg");
 }
 
 .input-list__label {
   @include main-intro-font;
 
-  margin-right: 10px;
+  margin-right: 15px;
+
+  &--for-contact {
+    margin-left: 21px;
+  }
 }
 
 .input-list__input,
@@ -139,11 +184,81 @@
   }
 }
 
+.radio-list,
+.checkbox-list {
+  padding-left: 60px;
+}
+
+.radio-list__item,
+.checkbox-list__item {
+  position: relative;
+  margin-bottom: 35px;
+}
+
 .radio-list__label,
 .checkbox-list__label {
   @include title-font;
 
   text-transform: none;
+}
+.radio-list__input,
+.checkbox-list__input {
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox-list__checkbox {
+  position: absolute;
+  top: -10px;
+  width: 46px;
+  height: 46px;
+  background-color: $basic-form;
+  border: 2px solid $basic-form;
+  margin-left: -60px;
+
+  &:hover {
+    background-color: $hover-form;
+  }
+
+  &:active {
+    background-color: $button-down;
+  }
+}
+
+.radio-list__radio {
+  position: absolute;
+  top: -10px;
+  width: 48px;
+  height: 48px;
+  background-color: $basic-form;
+  border-radius: 50%;
+  margin-left: -60px;
+
+  &:hover {
+    background-color: $hover-form;
+  }
+
+  &:active {
+    background-color: $button-down;
+  }
+}
+
+.radio-list__input:checked + .radio-list__radio::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+  background-color: $radio-control;
+  border-radius: 50%;
+}
+
+.checkbox-list__input:checked + .checkbox-list__checkbox {
+  @include background-img;
+
+  background-image: url(../img/tick.svg);
 }
 
 .form__comment {
@@ -155,6 +270,7 @@
   padding-bottom: 29px;
   padding-right: 23px;
   padding-left: 21px;
+  margin-bottom: 51px;
 
   @media (min-width: $tablet-width) {
     width: 100%;

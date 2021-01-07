@@ -79,6 +79,7 @@
   padding-right: 22px;
   padding-left: 22px;
   padding-bottom: 27px;
+  margin-top: 3px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -98,7 +99,7 @@
   flex-direction: row;
   width: 100%;
   margin-bottom: 8px;
-
+  margin-top: 17px;
   &--home-icon::before {
     display: block;
     content: " ";
@@ -223,8 +224,8 @@
   &--accent {
     color: $menu-font-color;
     background-color: $accent-background;
-    padding-top: 39px;
-    padding-bottom: 21px;
+    padding-top: 34px;
+    padding-bottom: 24px;
 
     @media (min-width: $tablet-width) {
       padding-top: 42px;

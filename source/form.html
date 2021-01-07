@@ -103,16 +103,18 @@
             </legend>
             <ul class="form__input input-list input-list--for-contact">
               <li class="input-list__item input-list__item--for-contact">
-                <label class="input-list__label" for="phone">
+                <label class="input-list__label input-list__label--for-contact" for="phone">
                   Контактный телефон*:
                 </label>
-                <input class="input-list__input" type="tel" name="phone" id="phone" placeholder="Введите телефон">
+                <input class="input-list__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" maxlength="15">
+                <div class="input-list__phone-icon"></div>
               </li>
               <li class="input-list__item input-list__item--for-contact">
                 <label class="input-list__label" for="email">
                   Электронная почта*:
                 </label>
-                <input class="input-list__input" type="email" name="email" id="email" placeholder="Ведите e-mail">
+                <input class="input-list__input input-list__input--mail" type="email" name="email" id="email" placeholder="Введите e-mail">
+                <div class="input-list__mail-icon"></div>
               </li>
             </ul>
           </fieldset>
@@ -123,19 +125,22 @@
             <ul class="form__input radio-list">
               <li class="radio-list__item">
                 <label class="radio-list__label">
-                  <input class="radio-list__radio" type="radio" name="review" value="cool" checked>
+                  <input class="radio-list__input" type="radio" name="review" value="cool" checked>
+                  <span class="radio-list__radio"></span>
                   Скорее положительное
                 </label>
               </li>
               <li class="radio-list__item">
                 <label class="radio-list__label">
-                  <input class="radio-list__radio" type="radio" name="review" value="bad">
+                  <input class="radio-list__input" type="radio" name="review" value="bad">
+                  <span class="radio-list__radio"></span>
                   Скорее отрицательное
                 </label>
               </li>
               <li class="radio-list__item">
                 <label class="radio-list__label">
-                  <input class="radio-list__radio" type="radio" name="review" value="neutral">
+                  <input class="radio-list__input" type="radio" name="review" value="neutral">
+                  <span class="radio-list__radio"></span>
                   Затрудняюсь ответить
                 </label>
               </li>
@@ -148,25 +153,29 @@
             <ul class="form__input checkbox-list">
               <li class="checkbox-list__item">
                 <label class="checkbox-list__label">
-                  <input class="checkbox-list__checkbox" type="checkbox" name="Devils-Bridge" checked>
+                  <input class="checkbox-list__input" type="checkbox" name="Devils-Bridge" checked>
+                  <span class="checkbox-list__checkbox"></span>
                   Мост Дьявола
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__label">
-                  <input class="checkbox-list__checkbox" type="checkbox" name="Bell-Rock" checked>
+                  <input class="checkbox-list__input" type="checkbox" name="Bell-Rock" checked>
+                  <span class="checkbox-list__checkbox"></span>
                   Гора-Колокол
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__label">
-                  <input class="checkbox-list__checkbox" type="checkbox" name="Slide-Park" checked>
+                  <input class="checkbox-list__input" type="checkbox" name="Slide-Park" checked>
+                  <span class="checkbox-list__checkbox"></span>
                   Слайд-парк
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__label">
-                  <input class="checkbox-list__checkbox" type="checkbox" name="Red-Rocks">
+                  <input class="checkbox-list__input" type="checkbox" name="Red-Rocks">
+                  <span class="checkbox-list__checkbox"></span>
                   Красные скалы
                 </label>
               </li>
