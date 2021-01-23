@@ -50,7 +50,6 @@
 
 .form__title {
   @include title-font;
-  @include decorative-border;
 
   text-align: center;
   width: 100%;
@@ -130,14 +129,23 @@
   padding-left: 22px;
 }
 
+.input-list__form-icon-container {
+  position: absolute;
+  top: 27px;
+  right: 0;
+  width: 57px;
+  height: 57px;
+  background-color: $icon-form-background;
+  z-index: 1;
+}
+
 .input-list__phone-icon,
 .input-list__mail-icon {
-  width: 51px;
-  height: 51px;
-  background-color: $icon-form-background;
+  width: 18px;
+  height: 18px;
   position: absolute;
-  top: 30px;
-  right: 0;
+  top: 20px;
+  right: 20px;
 }
 
 .input-list__phone-icon {
@@ -176,7 +184,9 @@
 
   &:focus {
     background-color: $basic-background;
-    outline: 4px solid $hover-form;
+    border: 4px solid $hover-form;
+    outline: none;
+    padding-bottom: 7px;
   }
 
   &::placeholder {
