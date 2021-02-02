@@ -1,5 +1,7 @@
 .inner-page-intro {
   @include flex-column;
+
+  position: relative;
 }
 
 .inner-page-intro__bg {
@@ -12,17 +14,6 @@
   position: relative;
   margin-bottom: 33px;
 
-  &::after {
-    content: "";
-    width: 320px;
-    height: 27px;
-    background-image: url("../img/bg-intro-triangle-mobile.svg");
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    bottom: 0;
-  }
-
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 100% 100%;
@@ -34,6 +25,15 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     margin-bottom: 102px;
   }
+}
+
+.inner-page-intro__bg-trangle {
+  height: 100%;
+}
+
+.inner-page-intro__trangle-image {
+  position: absolute;
+  bottom: -1px;
 }
 
 .inner-page-intro__bg-text {
