@@ -201,6 +201,7 @@
 
   text-transform: none;
 }
+
 .radio-list__input,
 .checkbox-list__input {
   appearance: none;
@@ -258,7 +259,7 @@
 .checkbox-list__input:checked + .checkbox-list__checkbox {
   @include background-img;
 
-  background-image: url(../img/tick.svg);
+  background-image: url("../img/tick.svg");
 }
 
 .form__comment {

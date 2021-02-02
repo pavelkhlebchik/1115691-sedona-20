@@ -80,9 +80,11 @@
 
 .page-intro__title {
   @include title-font;
+
   margin-right: 7px;
   margin-bottom: 30px;
   margin-left: 7px;
+
   @media (min-width: $tablet-width) {
     @include link-font;
   }
