@@ -1,6 +1,9 @@
 .photogallery {
   @include flex-column;
 
+  margin-top: 20px;
+  margin-bottom: 32px;
+
   @media (min-width: $tablet-width) {
     margin: 0 60px;
     margin-bottom: 50px;
@@ -38,6 +41,10 @@
     width: 100%;
     padding-top: 22px;
     padding-bottom: 15px;
+
+    &:last-child {
+      border-bottom: 1px solid #d6d6d6;
+    }
   }
 
   &--head {
@@ -99,10 +106,6 @@
   }
 }
 
-.photogallery__image-inner {
-  z-index: 10;
-}
-
 .photogallery__image-description--dark {
   @media (min-width: $tablet-width) {
     background-color: $photogallery-background;
@@ -149,6 +152,7 @@
     display: inline-block;
     background-color: $basic-black;
     opacity: $active-item-opacity;
+    margin-right: 10px;
 
     @media (min-width: $desktop-width) {
       background-color: $basic-background;
