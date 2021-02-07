@@ -20,10 +20,6 @@
 
   @include background-img;
 
-  @media (max-width: $mobile-width-only) {
-    margin-top: 222px;
-  }
-
   @media (min-width: $tablet-width) {
     top: 0;
   }
@@ -98,6 +94,12 @@
     background-color: $basic-background;
     margin-top: 6px;
     margin-bottom: 9px;
+  }
+
+  &--hidden {
+   @media (max-width: $mobile-width-only) {
+     display: none;
+   }
   }
 }
 
