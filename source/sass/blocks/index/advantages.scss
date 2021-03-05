@@ -217,7 +217,11 @@
 
 .advantages__image-advantage {
   width: 100%;
-  object-position: 0px -70px;
+  height: fit-content;
+
+  @media (min-width: $desktop-width) {
+    object-position: 0px -70px;
+ }
 }
 
 .advantages__description-wrapper {
