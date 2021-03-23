@@ -1,12 +1,15 @@
 {
   "name": "sedona-20",
   "private": true,
+  "type": "module",
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",
     "browser-sync": "^2.26.14",
     "gulp": "4.0.2",
+    "gulp-html-bem-validator": "^1.0.5",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "8.0.0",
     "gulp-sass": "4.1.0",
