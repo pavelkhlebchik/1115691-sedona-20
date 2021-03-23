@@ -15,7 +15,7 @@ export const html = () => {
       removeComments: true,
       collapseWhitespace: true
     }))
-    .pipe(gulp.dest("dist"))
+    .pipe(gulp.dest("build"))
     .pipe(sync.stream());
 }
 // Styles
